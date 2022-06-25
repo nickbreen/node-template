@@ -9,7 +9,7 @@ ifeq ($(bindir),)
   $(error bindir is not set)
 endif
 
-version ?= 14.15.0
+version ?= 16.15.1
 
 install: node-v$(version)-linux-x64
 	@ln -nvfrst $(bindir) $(wildcard $</bin/*)
