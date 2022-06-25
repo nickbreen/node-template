@@ -9,7 +9,7 @@ ifeq ($(bindir),)
   $(error bindir is not set)
 endif
 
-version ?= 1.22.10
+version ?= 1.22.19
 
 install: yarn-v$(version)
 	@ln -nvfrst $(bindir) $(wildcard $</bin/*)
